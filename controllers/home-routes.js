@@ -4,7 +4,7 @@ const { Post, User, Comment } = require('../models');
 
 router.get('/', (req, res) => {
     console.log(req.session);
-    
+
     Post.findAll({
       attributes: [
         'id',
